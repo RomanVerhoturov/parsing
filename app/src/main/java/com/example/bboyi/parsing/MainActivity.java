@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     Element tagA = newsRows.get(i).getElementsByTag("a").first();
                     newsLink = Constants.URL_ISTU + tagA.attr("href");
 
+
                    newsModels.add(new NewsModel(cat, NewsModel.COMMON, date,
                            tagA.text(), newsLink));
                 }
